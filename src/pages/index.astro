@@ -1,5 +1,6 @@
 ---
 title: "HarvestBTC"
+import Logo from '../assets/148cdd35-a0c9-4e6b-a948-964c7536e355.png'; // Adjust path if needed
 ---
 
 <html lang="en">
@@ -7,7 +8,6 @@ title: "HarvestBTC"
     <meta charset="UTF-8" />
     <title>HarvestBTC</title>
     <style>
-      /* Reset default margin and make body full-height */
       html, body {
         height: 100%;
         margin: 0;
@@ -17,29 +17,26 @@ title: "HarvestBTC"
       body {
         font-family: Times New Roman;
         text-align: center;
-        /* Solid orange background */
         background-color: orange;
-        /* White text */
         color: white;
-
-        /* Full viewport height */
         height: 100vh;
-
-        /* Flexbox centering */
         display: flex;
-        justify-content: center;  /* horizontal center */
-        align-items: center;      /* vertical center */
-
+        justify-content: center;
+        align-items: center;
         padding: 0 1rem;
       }
 
       .content {
-        /* Slight translucent overlay so content pops */
         background: rgba(0, 0, 0, 0.1);
         padding: 2rem;
         border-radius: 12px;
         max-width: 600px;
         width: 100%;
+      }
+
+      .logo-header {
+        max-width: 200px;
+        margin-bottom: 1rem;
       }
 
       h1 {
@@ -50,14 +47,13 @@ title: "HarvestBTC"
         margin: 0.5rem 0;
       }
 
-      /* Caption text beneath image */
       .caption {
         font-size: 0.85em;
         color: #e0e0e0;
         margin-top: 0.5rem;
       }
 
-      img {
+      .main-image {
         max-width: 300px;
         margin-top: 2rem;
       }
@@ -65,15 +61,17 @@ title: "HarvestBTC"
   </head>
   <body>
     <div class="content">
+      <!-- LOGO HEADER -->
+      <img src={Logo} alt="HarvestBTC Logo" class="logo-header" />
+
       <h1>HarvestBTC</h1>
-     <p>Moral, Unstoppable, Social, Energy Currency - BITCOIN</p>
-      <img src="1748464817551624.jpg" alt="HarvestBTC Logo" />
+      <p>Moral, Unstoppable, Social, Energy Currency - BITCOIN</p>
+
+     <img src="/harvestBTC/HarvestBTC LOGO.png" alt="HarvestBTC Logo" class="logo-header" />
 
       <p class="caption">33Sw8mn15jtF5psVsMEQY3H8kejRncX21d</p>
-	  <p class="caption">&#9889; &#127757; &#128056; &#128104;&#8205;&#127806;&#127793;&#9935;&#65039;&#9889;</p>
-	   <p class="caption">PROOF OF WORK ETHIC</p>
+      <p class="caption">&#9889; &#127757; &#128056; &#128104;&#8205;&#127806;&#127793;&#9935;&#65039;&#9889;</p>
+      <p class="caption">PROOF OF WORK ETHIC</p>
     </div>
   </body>
 </html>
-
-
